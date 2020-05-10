@@ -1,0 +1,250 @@
+<!-- Author: Abby Owen -->
+<!-- Date: 5/9/20 -->
+<!-- Purpose: HTML for DALI webpage coding challenge -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>abbyowen.me</title>
+
+    <!-- Link CSS sheet to html -->
+    <style>
+      /* Author: Abby Owen */
+      /* Date: 5/9/20 */
+      /* Purpose: CSS stylesheet for DALI Webpage coding challenge */
+
+      /* All Screen sizes */
+      @media screen{
+
+      body{
+        /* Create right moving gradient from pink to blue */
+        background: linear-gradient(to right bottom, #FC766AFF, #5B84B1FF);
+
+        /* set from the edge of the window */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      /* Heading 1 styles */
+      h1{
+        font-size: 100px;
+        font-family:'Helvetica Narrow', sans-serif;
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+        color: #ffffff;
+      }
+
+      /* Site Title id style */
+      #site_title{
+        font-size: 100px;
+        width:220px;
+        margin: 5% auto;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Helvetica Narrow', sans-serif;
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, .2);
+      }
+
+      /* Background class (handles the first square on the page) */
+      .background {
+        font-size: 22px;
+        font-family: monospace;
+        font-weight: 100px;
+        color: #00203FFF;
+      }
+
+       /* Languages class (handles the second square) */
+      .languages {
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 100px;
+        color: #00203FFF;
+
+      }
+
+      /* Photo of myself */
+      .mephoto img {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      /* Java logo */
+      .java img {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 200px;
+        float: left;
+
+      }
+
+      /* Python logo */
+      .python img {
+        display: inline;
+        margin-left: 1px;
+        margin-right: 1px;
+        height: 200px;
+        float: left;
+        width: 170px;
+      }
+
+      /* Why DALI class (handles the last square) */
+      .why {
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: 100px;
+        color: #00203FFF;
+
+      }
+
+      /* Paragraph style */
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 3rd level heading content */
+      #content h3{
+        margin: 10px 0;
+        font-family: monospace;
+        font-size: 25px;
+
+
+      }
+
+      /* Create box to contain content  */
+      #content{
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        height:250px;
+
+      }
+
+      /* Paragraph styling for content  */
+      #content p{
+        margin: 7.5px 0;
+        font-family: monospace;
+        text-align: left;
+        height: 250px;
+      }
+
+      /* Offset container from the edge of the page */
+      #container{
+        margin: 20px;
+        width: 1400px;
+
+      }
+
+      /* Left floating container */
+      #container1 {
+        float:left;
+        width: 49%;
+        height: 800px;
+      }
+
+      /* Right floating container */
+      #container2 {
+        float:right;
+        width: 49%;
+        height: 800px;
+      }
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Website header -->
+    <header>
+      <div id = "site_title"><h1> Abby Owen!</h1></div>
+    </header>
+
+    <!-- Mark all following text into a container id -->
+    <div id = "container">
+
+    <!-- Right floating container -->
+    <div id = "container1">
+
+      <!-- Begin content -->
+      <div id = "content">
+
+        <h3> BACKGROUND </h3>
+        <section class="background">
+
+          <!-- Background information paragraph -->
+          <p>Hi! My name is Abby Owen and I am a '23 at Dartmouth College!
+          I am from Larchmont, NY. I love to code and am really excited to
+          continue building my skills over the coming years and hopefully this
+          can be facilitated by an opportunity to work amongst other, more expireinced
+          coders at DALI Labs! </p>
+
+        </section>
+      </div>
+
+      <!-- New content box, also of id container 1 (directly under Background) -->
+      <div id = "content">
+
+        <h3> PHOTOS </h3>
+
+        <!-- First photo (resume photo) -->
+        <section class = "mephoto">
+          <img src="assets/images/me.jpg">
+        </section>
+
+        <!-- Second photo (Java logo) -->
+        <section class = "java">
+          <img src="assets/images/java.png">
+        </section>
+
+        <!-- Third photo (Python logo) -->
+        <section class = "python">
+          <img src="assets/images/python.png">
+        </section>
+
+      </div>
+
+    </div>
+
+    <!-- Create a second container id (right floating) -->
+    <div id = "container2">
+
+      <!-- New content -->
+      <div id = "content">
+
+        <h3> LANGUAGES </h3>
+        <section class="languages">
+
+          <!-- Languages information -->
+          <p> I know Java, Python, R, and now HTML and CSS and a bit of Javascript!
+          I hope to improve all of these skills throughout the rest of this term
+          and during the summer! </p>
+        </section>
+      </div>
+
+      <!-- New content for container2 -->
+      <div id = "content">
+
+        <h3> WHY DALI? </h3>
+        <section class = "why">
+
+          <!-- Why DALI information -->
+          <p> I love computer science, and I also love to collaborate. While I am
+          confident in my coding skills in Java and Python, I want to improve my
+          skills in more development based languages. I have loved getting familiar
+          with HTML, CSS, and Javascript in order to being some of my own projects
+          during quarantine and complete this challenge. I would love to continue
+          developing my skills in a passionate and collaborative enviornment where my
+          peers are equally as excited to grow their development skills. </p>
+        </section>
+
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>
