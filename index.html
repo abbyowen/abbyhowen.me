@@ -7,6 +7,10 @@
   <head>
     <meta charset="utf-8">
     <title>abbyowen.me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins"
+    rel = "stylesheet">
 
     <!-- Link CSS sheet to html -->
     <style>
@@ -24,15 +28,28 @@
         /* set from the edge of the window */
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 1400px;
+        font-family: 'Fredoka One', cursive;
       }
 
       /* Heading 1 styles */
       h1{
         font-size: 100px;
-        font-family:'Helvetica Narrow', sans-serif;
+        font-family: 'Fredoka One', cursive;
         text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
         color: #ffffff;
+      }
+
+      ul {
+        padding: 5px;
+        margin: 5px;
+        display: inline-block;
+      }
+
+      li {
+        padding: 5px;
+        margin: 5px;
+        display: inline-block;
       }
 
       /* Site Title id style */
@@ -42,14 +59,18 @@
         margin: 5% auto;
         text-align: center;
         color: #ffffff;
-        font-family: 'Helvetica Narrow', sans-serif;
+        font-family: 'Fredoka One';
+
+      }
+
         text-shadow: 3px 6px 2px rgba(0, 0, 0, .2);
       }
+
 
       /* Background class (handles the first square on the page) */
       .background {
         font-size: 22px;
-        font-family: monospace;
+        font-family: 'Poppins';
         font-weight: 100px;
         color: #00203FFF;
       }
@@ -57,7 +78,7 @@
        /* Languages class (handles the second square) */
       .languages {
         font-size: 30px;
-        font-family: monospace;
+        font-family: 'Poppins';
         font-weight: 100px;
         color: #00203FFF;
 
@@ -94,11 +115,51 @@
       /* Why DALI class (handles the last square) */
       .why {
         font-size: 18px;
-        font-family: monospace;
+        font-family: 'Poppins';
         font-weight: 100px;
         color: #00203FFF;
 
       }
+
+      /* Navigation bar */
+      .nav-bar li {
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+        float: left;
+
+      }
+
+      /* Each element in the bar */
+      .nav-bar a {
+        text-align: center;
+        padding: 5px;
+        display: block;
+
+      }
+      .container {
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 960px;
+
+      }
+
+
+      #button1 {
+        background-color: #ffffff;
+        color: #00203FFF;
+        padding: 20px
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin:  10px;
+        border-radius: 5px;
+        font-family: "Fredoka One";
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-shadow: none;
+      }
+
 
       /* Paragraph style */
       p {
@@ -109,9 +170,8 @@
       /* 3rd level heading content */
       #content h3{
         margin: 10px 0;
-        font-family: monospace;
+        font-family: 'Fredoka One';
         font-size: 25px;
-
 
       }
 
@@ -129,7 +189,7 @@
       /* Paragraph styling for content  */
       #content p{
         margin: 7.5px 0;
-        font-family: monospace;
+        font-family: 'Poppins';
         text-align: left;
         height: 250px;
       }
@@ -140,6 +200,7 @@
         width: 1400px;
 
       }
+
 
       /* Left floating container */
       #container1 {
@@ -154,15 +215,34 @@
         width: 49%;
         height: 800px;
       }
+
       }
+
+
     </style>
 
   </head>
   <body>
     <!-- Website header -->
-    <header>
-      <div id = "site_title"><h1> Abby Owen!</h1></div>
+    <header class="container">
+      <div id = "site_title">
+        <h1>
+        abby owen!
+        <nav class="nav-bar">
+          <ul>
+          <li id="button1" ><a href="index.html">Home</a></li>
+
+
+          <li id="button1" ><a href="fun-facts.html">Fun Facts</a></li>
+          </ul>
+
+        </nav>
+        </h1>
+        </div>
+
+
     </header>
+
 
     <!-- Mark all following text into a container id -->
     <div id = "container">
@@ -198,7 +278,7 @@
 
         <!-- Second photo (Java logo) -->
         <section class = "java">
-          <img src="assets/images/java.png">
+          <img src="assets/imaged/java.png">
         </section>
 
         <!-- Third photo (Python logo) -->
