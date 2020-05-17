@@ -1,0 +1,353 @@
+<!-- Author: Abby Owen -->
+<!-- Date: 5/9/20 -->
+<!-- Purpose: HTML for DALI webpage coding challenge -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>abbyowen.me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+    rel="stylesheet">
+    <link href= "https://fonts.googleapis.com/css?family=Poppins"
+    rel = "stylesheet">
+
+
+    <!-- Link CSS sheet to html -->
+    <style>
+      /* Author: Abby Owen */
+      /* Date: 5/9/20 */
+      /* Purpose: CSS stylesheet for DALI Webpage coding challenge */
+
+      /* All Screen sizes */
+      @media screen{
+
+      body{
+        /* Create right moving gradient from pink to blue */
+        background: linear-gradient(to right bottom, #93A5CE, #E4EEE9);
+
+        /* set from the edge of the window */
+        margin: 0;
+        padding: 0;
+        width: 1400px;
+        height: 750px;
+        font-family: 'Fredoka One';
+      }
+
+      /* Heading 1 styles */
+      h1{
+        font-size: 100px;
+        font-family: 'Fredoka One';
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+        color: #ffffff;
+        margin: 0;
+
+      }
+
+      ul {
+        padding: 5px;
+        margin: 0 auto;
+        display: inline-block;
+        position: absoulte;
+      }
+
+      li {
+        padding: 5px;
+        margin-right: 0 auto;
+        margin-left: 250px;
+        display: inline-block;
+
+      }
+
+
+      /* Site Title id style */
+      #site_title{
+        font-size: 100px;
+        width:220px;
+        margin: 5% auto;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Fredoka One';
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, .2);
+      }
+
+      /* List objects of the nav bar (collection of buttons)*/
+      .nav-bar li {
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+        float: left;
+      }
+
+      /* Item in the nav bar */
+      .nav-bar a {
+        text-align: center;
+        padding: 5px;
+        display: block;
+
+      }
+
+      .container {
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 960px;
+
+      }
+
+
+      /* Fact 1 button location and style */
+      #fact1 {
+        background-color: #52688F;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        font-size: 50px;
+        margin-left: 100px;
+        margin-right: 0 auto;
+        border-radius: 5px;
+        font-family: "Fredoka One";
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float: center;
+        text-align: center;
+        position: sticky;
+
+
+      }
+
+        /* Fact 2 button location and style */
+      #fact2 {
+        background-color: #52688F;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        font-size: 50px;
+        margin-left: 0 auto;
+        margin-right: 100px;
+        border-radius: 5px;
+        font-family: "Fredoka One";
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float: center;
+        text-align: center;
+        position: sticky;
+
+
+      }
+
+      /* Styles for the fact buttons */
+      #button2 {
+        background-color: #ffffff;
+        color: #00203FFF;
+        padding: 20px
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        font-family: "Fredoka One";
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-shadow: none;
+      }
+
+      /* First button div formatting (centered) */
+      #firstbtn {
+        float: left;
+        margin-right: 20px;
+        margin-left: 320px;
+      }
+
+      /* Second button div formatting (centered) */
+      #secondbtn {
+        float: right;
+        margin-left: 30px;
+        margin-right: 250px;
+      }
+
+
+
+      /* Paragraph style */
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* First fact that will appear below Fact #1*/
+      #invisible1 {
+        width: 238px;
+        padding: 10px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #728AB2;
+        color: black;
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 420px;
+        margin-bottom: 10px;
+        font-family: 'Poppins';
+        display: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      /* First fact that will appear below Fact #2*/
+      #invisible2 {
+        width: 245px;
+        padding: 10px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #728AB2;
+        color: black;
+        float: right;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 415px;
+        margin-bottom: 10px;
+        font-family: 'Poppins';
+        display: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      /* 3rd level heading content */
+      #content h3{
+        margin: 10px 0;
+        font-family: 'Fredoka One';
+        font-size: 25px;
+      }
+
+      /* Create box to contain content  */
+      #content{
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        height:250px;
+
+      }
+
+      /* Paragraph styling for content  */
+      #content p{
+        margin: 7.5px 0;
+        font-family: 'Poppins';
+        text-align: left;
+        height: 250px;
+      }
+
+      /* Offset container from the edge of the page */
+      #container{
+        margin: 20px;
+        width: 1400px;
+
+      }
+
+
+      /* Left floating container */
+      #container1 {
+        float:left;
+        width: 49%;
+        height: 800px;
+      }
+
+      /* Right floating container */
+      #container2 {
+        float:right;
+        width: 49%;
+        height: 800px;
+      }
+
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <!-- Website header -->
+    <header class="container">
+      <div id = "site_title">
+        <h1>
+        abby owen!
+
+        <nav class="nav-bar">
+
+          <!-- Page navigation buttons -->
+          <ul>
+          <li id = "button2"><a href="index.html">Home</a></li>
+
+          <li id = "button2"><a href="fun-facts.html">Fun Facts</a></li>
+          </ul>
+
+        </nav>
+        </h1>
+      </div>
+
+    </header>
+
+        <!-- List of fact buttons -->
+        <ul>
+          <div id = "firstbtn"
+        <li><button onclick="revealFact1()" id = "fact1"> FACT #1 </button></li>
+          </div>
+
+        <div id = "secondbtn"
+        <li><button onclick="revealFact2()" id = "fact2"> FACT #2 </button></li>
+          </div>
+          </ul>
+
+          <!-- Text that will become revealed on button click-->
+          <div id ="invisible1">I am double jointed in both of my arms! Sadly, because of this, I have
+          broken my arms five times... </div>
+
+          <div id = "invisible2">I have a dog named Rosie! She's 8, but looks super old for some reason.</div>
+
+
+
+
+          <!-- Text reveal 1 script-->
+          <script>
+            function revealFact1() {
+              // Get element with invisible1 tag
+              var invisText = document.getElementById("invisible1");
+
+              // If text is not displayed, display it
+              if (invisText.style.display == "none") {
+                invisText.style.display = "block";
+              }
+
+              // If text is displayed, hide it
+              else {
+                invisText.style.display = "none"
+              }
+              }
+          </script>
+
+          <!-- Text reveal 2 script-->
+          <script>
+            function revealFact2() {
+                // Get element with invisible2 tag
+              var invisText = document.getElementById("invisible2");
+
+              // If text is not displayed, display it
+              if (invisText.style.display == "none") {
+                invisText.style.display = "block";
+              }
+
+              // If text is displayed, hide it
+              else {
+                invisText.style.display = "none"
+              }
+              }
+          </script>
+
+
+
+  </body>
+</html>
